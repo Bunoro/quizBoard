@@ -4,40 +4,95 @@
       <title>JavaScript Quiz</title>
       <link href="css/bootstrap3.css" rel="stylesheet" type="text/css">
       <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?/family=Tangerine" rel="stylesheet">
       <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="js/scripts.js"></script>
    </head>
    <body>
      <div class="container">
-     <h1><strong>Quiz:</strong></h1>
+     <h1><strong>JavaScript Quiz:</strong></h1>
      <ul>
-       <li>Answer <strong><em>all</em></strong> the questions by selecting one anwer of the possible three.</li>
+       <li>Answer <strong><em>all</em></strong> the questions by selecting only one answer.</li>
        <li>Once complete, hit the submit button.</li>
      </ul>
      </div>
      <div class="container">
        <form class="form">
-         <p>1.Which of the following questions best describes JavaScript?</p>
+         <div class="container">
+     <form id="inputForm">
+       <br>
+       <p>1. The following are javascript data types except?</p>
+       <div class="radio">
+         <input type="radio" name="input1" value="0"/>
+         <label>Number</label>
+       </div>
+       <div class="radio">
+           <input type="radio" name="input1" value="10"/>
+           <label>Text </label>
+       </div>
+       <div class="radio">
+         <input  type="radio" name="input1"value="0"/>
+         <label>Boolean</label>
+       </div>
+         <br>
+         <p>2.JavaScript is designed for following purpose ?</p>
          <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="chocolate">
-         Attribute
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="vanilla">
-         Program
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" name="flavor" value="cookiesandcream">
-         Computer Language
-       </label>
-     </div>
-
-
+           <input type="radio" name="input2" value="10"/>
+           <label>To add interactivity to HTML Pages</label>
+         </div>
+         <div class="radio">
+           <input type="radio" name="input2" value="0"/>
+           <label>To Style HTML Pages </label>
+         </div>
+         <div class="radio">
+           <input  type="radio" name="input2" value="0"/>
+           <label>To Perform Server Side Scripting Opertion</label>
+         </div>
+           <br>
+           <p>3.Cost for Using JavaScript in your HTML is ?</p>
+           <div class="radio">
+             <input type="radio" name="input3" value="0"/>
+             <label>1000ksh per Year</label>
+           </div>
+           <div class="radio">
+             <input type="radio" name="input3" value="10"/>
+             <label>Its Free! </label>
+           </div>
+           <div class="radio">
+             <input  type="radio" name="input3" value="0"/>
+             <label>30$ per year</label>
+           </div>
+             <br>
+             <p>4.Why JavaScript is called as Lightweight Programming Language ?</p>
+             <div class="radio">
+               <input type="radio" name="input4" value="0"/>
+               <label>Because JS is client side scripting</label>
+             </div>
+             <div class="radio">
+               <input type="radio" name="input4" value="0"/>
+               <label>Because we can add programming functionality inside JS </label>
+             </div>
+             <div class="radio">
+               <input  type="radio" name="input4" value="10"/>
+               <label>	Because JS can provide programming functionality inside but up to certain extend.</label>
+             </div>
+             <br>
+             <p>5.JS code included inside head section is loaded before loading page.</p>
+             <div class="radio">
+               <input type="radio" name="input5" value="10"/>
+               <label>True.</label>
+             </div>
+             <div class="radio">
+               <input type="radio" name="input5"  value="0"/>
+               <label>False</label>
+             </div>
+             <div class="rst">
+             <div id="result"></div>
+           </div>
        </form>
-
-   </body>
+       </div>
+       <div class="button">
+         <button id="answer" onclick="marks()" class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+       </div>
+       <script src="js/script.js" charset="utf-8"></script>
+ </body>
