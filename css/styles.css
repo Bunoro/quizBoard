@@ -1,4 +1,8 @@
-h1 {
+.container {
   font-family: 'Tangerine', serif;
-  font-size: 48px
+  font-size: 18px
+}
+body {
+  background-image: url('https://goo.gl/images/fmnBNs');
+  background-size: cover;
 }
